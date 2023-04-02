@@ -1,9 +1,10 @@
 import click
+import auto_cr.review_file
 
 @click.command()
-@click.option('--name', default='World', help='Name to greet.')
-def hello(name):
-    click.echo(f'Hello, {name}!')
+@click.option('--file', help='File to review.')
+def review_file_cmd(file):
+    auto_cr.review_file.review_file(file)
 
 if __name__ == '__main__':
-    hello()
+    review_file_cmd()

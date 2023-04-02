@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'auto-cr=cli.main:hello',
+            'auto-cr=cli.main:review_file_cmd',
         ],
     },
 )
