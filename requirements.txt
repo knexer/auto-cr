@@ -1,0 +1,4 @@
+click
+openai
+setuptools
+wheel
